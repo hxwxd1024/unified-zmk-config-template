@@ -1,11 +1,11 @@
 
 include:
   - board: akdk_bt1
-    shield: 1760279038524_left
+    shield: fing_board_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1
-    shield: 1760279038524_right
+    shield: fing_board_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1
