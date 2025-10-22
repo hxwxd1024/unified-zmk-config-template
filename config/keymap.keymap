@@ -1,44 +1,57 @@
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        comb.exc {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <35 31>;
+        };
+
+        comb.del {
+            bindings = <&kp DELETE>;
+            key-positions = <31 34>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&kp Q  &kp L  &kp U     &kp COMMA           &kp PERIOD              &kp F        &kp W          &kp R         &kp Y  &kp P
+&kp E  &kp I  &kp A     &kp O               &kp MINUS               &kp K        &kp T          &kp N         &kp S  &kp H
+&kp Z  &kp X  &kp C     &kp V               &none                   &kp G        &kp D          &kp M         &kp J  &lt 2 B
+              &kp LGUI  &mt LEFT_SHIFT TAB  &mt LEFT_CONTROL SPACE  &lt 1 ENTER  &kp BACKSPACE  &kp QUESTION
             >;
         };
 
         layer_1 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&kp F1  &kp F2   &none  &kp F4              &kp F5                  &none    &kp N7         &kp N8        &kp N9        &none
+&none   &kp F7   &none  &kp F9              &kp F10                 &kp DOT  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp KP_ENTER
+&none   &kp F12  &none  &none               &none                   &kp N0   &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &none
+                 &none  &mt LEFT_SHIFT TAB  &mt LEFT_CONTROL SPACE  &none    &kp BACKSPACE  &none
             >;
         };
 
         layer_2 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&kp LANG_ZENKAKUHANKAKU  &kp LS(N8)         &kp LS(N9)       &none             &none  &kp ESC       &none          &none      &kp CARET     &kp PERCENT
+&kp LANG_HIRAGANA        &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LEFT_BRACKET  &none  &kp EQUAL     &kp PLUS       &kp MINUS  &kp ASTERISK  &kp SLASH
+&kp LANGUAGE_2           &kp SEMICOLON      &kp SQT          &none             &none  &kp LEFT      &kp UP         &kp DOWN   &kp RIGHT     &none
+                                            &none            &none             &none  &kp KP_ENTER  &kp BACKSPACE  &none
             >;
         };
 
         layer_3 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
         };
     };
