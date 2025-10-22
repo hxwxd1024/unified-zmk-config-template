@@ -1,0 +1,14 @@
+
+if SHIELD_FING_BOARD_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "fing_board"
+
+endif
+
+if SHIELD_FING_BOARD_LEFT || SHIELD_FING_BOARD_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
