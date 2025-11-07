@@ -40,8 +40,8 @@
 
         layer_2 {
             bindings = <
-&kp LANG_ZENKAKUHANKAKU  &kp LS(N8)         &kp LS(N9)       &none             &none  &kp ESC       &none          &none      &kp CARET     &kp PERCENT
-&kp LANG_HIRAGANA        &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LEFT_BRACKET  &none  &kp EQUAL     &kp PLUS       &kp MINUS  &kp ASTERISK  &kp SLASH
+&kp LANGUAGE_5           &kp LS(N8)         &kp LS(N9)       &none             &none  &kp ESC       &none          &none      &kp CARET     &kp PERCENT
+&kp LANGUAGE_1           &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LEFT_BRACKET  &none  &kp EQUAL     &kp PLUS       &kp MINUS  &kp ASTERISK  &kp SLASH
 &kp LANGUAGE_2           &kp SEMICOLON      &kp SQT          &none             &none  &kp LEFT      &kp UP         &kp DOWN   &kp RIGHT     &none
                                             &none            &none             &none  &kp KP_ENTER  &kp BACKSPACE  &none
             >;
