@@ -1,12 +1,19 @@
-
 include:
-  - board: akdk_bt1
-    shield: fing_board_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: akdk_bt1
-    shield: fing_board_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: akdk_bt1
+  - board: nice_nano_v2
+    shield: fing_board_left nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano_v2
+    shield: fing_board_right nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano_v2
+    shield: hshs46_left nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano_v2
+    shield: hshs46_right nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano_v2
     shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: fing_board_dongle prospector_adapter
