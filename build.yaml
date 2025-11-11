@@ -9,7 +9,7 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
-    shield: fing_board_dongle prospector_adapter
+    shield: fing_board_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     
