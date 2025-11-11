@@ -10,5 +10,6 @@ outputs:
   - usb
   - ble
 siblings:
+  - fing_board_center
   - fing_board_left
   - fing_board_right
