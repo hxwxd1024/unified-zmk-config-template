@@ -21,6 +21,7 @@
         compatible = "zmk,keymap";
 
         layer_0 {
+            display-name = "Base";           # <--- add this
             bindings = <
 &kp Q  &kp L  &kp U     &kp COMMA           &kp PERIOD              &kp F        &kp W          &kp R         &kp Y  &kp P
 &kp E  &kp I  &kp A     &kp O               &kp MINUS               &kp K        &kp T          &kp N         &kp S  &kp H
@@ -30,6 +31,7 @@
         };
 
         layer_1 {
+            display-name = "Number";           # <--- add this
             bindings = <
 &kp F1  &kp F2   &none  &kp F4              &kp F5                  &none    &kp N7         &kp N8        &kp N9        &none
 &none   &kp F7   &none  &kp F9              &kp F10                 &kp DOT  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp KP_ENTER
@@ -39,6 +41,7 @@
         };
 
         layer_2 {
+            display-name = "calc.";           # <--- add this
             bindings = <
 &kp LANGUAGE_5           &kp LS(N8)         &kp LS(N9)       &none             &none  &kp ESC       &none          &none      &kp CARET     &kp PERCENT
 &kp LANGUAGE_1           &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LEFT_BRACKET  &none  &kp EQUAL     &kp PLUS       &kp MINUS  &kp ASTERISK  &kp SLASH
@@ -48,11 +51,12 @@
         };
 
         layer_3 {
+            display-name = "Bluetooth";           # <--- add this
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none
-&bt BT_NXT    &bt BT_PRV    &none         &none         &bt BT_CLR    &none  &none  &none  &none  &none
-&none         &none         &none         &none         &none         &none  &none  &none  &none  &none
-                            &none         &none         &none         &none  &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp KP_NUMLOCK      &none  &none  &none  &none
+&bt BT_NXT    &bt BT_PRV    &none         &none         &bt BT_CLR    &none        &none  &none  &none  &none
+&none         &none         &none         &none         &none         &none        &none  &none  &none  &none
+                            &none         &none         &none         &none        &none  &none
             >;
         };
     };
