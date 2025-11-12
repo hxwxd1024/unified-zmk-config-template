@@ -2,13 +2,14 @@ include:
   - board: akdk_bt1
     shield: fing_board_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: akdk_bt1
     shield: fing_board_right
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: akdk_bt1
     shield: settings_reset
+    
   - board: seeeduino_xiao_ble
     shield: fing_board_dongle prospector_adapter
   - board: seeeduino_xiao_ble
