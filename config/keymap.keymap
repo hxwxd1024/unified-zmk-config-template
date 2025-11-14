@@ -31,6 +31,7 @@
         };
 
         layer_1 {
+            display-name = "FN and num";
             bindings = <
 &kp F1  &kp F2   &none  &kp F4              &kp F5                  &none    &kp N7         &kp N8        &kp N9        &none
 &none   &kp F7   &none  &kp F9              &kp F10                 &kp DOT  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp KP_ENTER
@@ -40,6 +41,7 @@
         };
 
         layer_2 {
+            display-name = "Symbol";
             bindings = <
 &kp LANGUAGE_5           &kp LS(N8)         &kp LS(N9)       &none             &none  &kp ESC       &none          &none      &kp CARET     &kp PERCENT
 &kp LANGUAGE_1           &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LEFT_BRACKET  &none  &kp EQUAL     &kp PLUS       &kp MINUS  &kp ASTERISK  &kp SLASH
@@ -49,6 +51,7 @@
         };
 
         layer_3 {
+            display-name = "Bluetooth";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none
 &bt BT_NXT    &bt BT_PRV    &none         &none         &bt BT_CLR    &none  &none  &none  &none  &none
