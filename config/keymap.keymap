@@ -21,6 +21,7 @@
         compatible = "zmk,keymap";
 
         layer_0 {
+            display-name = "Base";
             bindings = <
 &kp Q  &kp L  &kp U     &kp COMMA           &kp PERIOD              &kp F        &kp W          &kp R         &kp Y  &kp P
 &kp E  &kp I  &kp A     &kp O               &kp MINUS               &kp K        &kp T          &kp N         &kp S  &kp H
