@@ -1,14 +1,37 @@
+# ---------------------------------------------------------
+# 共通設定: 左右およびドングルすべてに適用
+# ---------------------------------------------------------
+if SHIELD_FING_BOARD_LEFT || SHIELD_FING_BOARD_RIGHT || SHIELD_FING_BOARD_DONGLE
 
-if SHIELD_FING_BOARD_LEFT
-
+# 名前は全シールドで統一しておくと管理が楽です
+# Max 16 characters
 config ZMK_KEYBOARD_NAME
     default "fing_board"
 
-endif
-
-if SHIELD_FING_BOARD_LEFT || SHIELD_FING_BOARD_RIGHT
-
+# 全てのパーツはSplitシステムの一部として動作
 config ZMK_SPLIT
     default y
+
+endif
+
+# ---------------------------------------------------------
+# ドングル固有設定 (Central)
+# ---------------------------------------------------------
+if SHIELD_FING_BOARD_DONGLE
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+# 左右の周辺機器(Peripheral)の数。Unibodyなら1、左右分割なら2
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+# 推奨計算式: ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS (2) + 接続したいデバイス数 (通常5)
+config BT_MAX_CONN
+    default 7
+
+# BT_MAX_CONN と同じ値にする
+config BT_MAX_PAIRED
+    default 7
 
 endif
