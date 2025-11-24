@@ -1,1 +1,24 @@
+/*
+ * ベースボード (例: nrf52840_dongle) を前提としたオーバーレイ
+ */
 
+#include <dt-bindings/zmk/kscan_gpio_matrix.h>
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        // ここで fing_board_dongle シールドを有効化します
+        zmk,kscan = &kscan_0;
+        zmk,matrix = &default_matrix;
+    };
+};
+
+// **ZMK Split Central化の設定**
+// ZMKは通常、ボード設定から split-peripheral を無効化して Central の振る舞いを有効にします。
+&zmk {
+    compatible = "zmk,kscan";
+    def_type = "zmk-kscan-gpio-matrix";
+    
+    // Split Centralに必要な設定
+    // ほとんどの場合、デフォルト設定でCentralとして動作します。
+};
