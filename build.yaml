@@ -10,3 +10,10 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1
     shield: settings_reset
+
+---
+include:
+  - board: seeeduino_xiao_ble
+    shield: fing_board_dongle prospector_adapter
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
