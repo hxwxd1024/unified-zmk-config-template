@@ -48,4 +48,3 @@
     kscan = <&kscan0>;
     transform = <&default_transform>;
 };
-
