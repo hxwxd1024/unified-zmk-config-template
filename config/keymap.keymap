@@ -24,8 +24,8 @@
             display-name = "Base";
             bindings = <
 &kp Q  &kp L  &kp U     &kp COMMA           &kp PERIOD              &kp F        &kp W          &kp R         &kp Y  &kp P
-&kp E  &kp I  &kp A     &kp O               &kp MINUS               &kp K        &kp T          &kp N         &kp S  &kp H
-&kp Z  &kp X  &kp C     &kp V               &mo 3                   &kp G        &kp D          &kp M         &kp J  &lt 2 B
+&kp E  &kp I  &kp A     &kp O               &kp MINUS               &kp K        &kp T          &kp N         &kp S  &lt 2 H
+&kp Z  &kp X  &kp C     &kp V               &mo 3                   &kp G        &kp D          &kp M         &kp J  &kp B
               &kp LGUI  &mt LEFT_SHIFT TAB  &mt LEFT_CONTROL SPACE  &lt 1 ENTER  &kp BACKSPACE  &kp QUESTION
             >;
         };
