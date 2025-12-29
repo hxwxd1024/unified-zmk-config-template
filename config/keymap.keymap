@@ -45,7 +45,7 @@
             bindings = <
 &kp LANGUAGE_5  &kp LS(N8)         &kp LS(N9)       &kp INT_YEN         &none                   &kp ESC       &none          &none      &kp CARET        &kp PERCENT
 &kp LANGUAGE_1  &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LEFT_BRACKET    &none                   &kp EQUAL     &kp KP_PLUS    &kp MINUS  &kp KP_ASTERISK  &kp SLASH
-&kp LANGUAGE_2  &kp SEMICOLON      &kp SQT          &kp UNDER           &none                   &kp LEFT      &kp UP         &kp DOWN   &kp RIGHT        &none
+&kp LANGUAGE_2  &kp SEMICOLON      &kp SQT          &kp UNDERSCORE      &none                   &kp LEFT      &kp UP         &kp DOWN   &kp RIGHT        &none
                                    &none            &mt LEFT_SHIFT TAB  &mt LEFT_CONTROL SPACE  &kp KP_ENTER  &kp BACKSPACE  &none
             >;
         };
