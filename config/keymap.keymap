@@ -15,6 +15,11 @@
             bindings = <&kp DELETE>;
             key-positions = <31 34>;
         };
+
+        mo3 {
+            bindings = <&mo 3>;
+            key-positions = <24 23>;
+        };
     };
 
     keymap {
@@ -25,7 +30,7 @@
             bindings = <
 &kp Q  &kp L  &kp U     &kp COMMA           &kp PERIOD              &kp F        &kp W          &kp R         &kp Y  &kp P
 &kp E  &kp I  &kp A     &kp O               &kp MINUS               &kp K        &kp T          &kp N         &kp S  &kp H
-&kp Z  &kp X  &kp C     &kp V               &mo 3                   &kp G        &kp D          &kp M         &kp J  &lt 2 B
+&kp Z  &kp X  &kp C     &kp V               &kp LEFT_ALT            &kp G        &kp D          &kp M         &kp J  &lt 2 B
               &kp LGUI  &mt LEFT_SHIFT TAB  &mt LEFT_CONTROL SPACE  &lt 1 ENTER  &kp BACKSPACE  &kp QUESTION
             >;
         };
